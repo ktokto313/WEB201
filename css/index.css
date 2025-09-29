@@ -1,0 +1,41 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+header {
+    background-color: greenyellow;
+}
+
+nav {
+    background-color: green;
+}
+
+nav > * {
+    align-content: center;
+    height: 25px;
+}
+
+main {
+    background-color: azure;
+}
+
+footer {
+    background-color: lightcyan;
+}
+
+li {
+    background-color: aqua;
+    display: inline;
+    width: 50px;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: Blue;
+}
+
+p {
+    line-height: 10px;
+}
