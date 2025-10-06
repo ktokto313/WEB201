@@ -3,17 +3,38 @@ body {
     font-size: 15px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    align-items: end;
+}
+
+.grid img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
 header {
     background-color: greenyellow;
 }
 
 nav {
-    background-color: green;
+    display: inline-block;
+    align-content: center;
+    width: 80%;
+    /* background-color: green; */
 }
 
-nav > * {
-    align-content: center;
-    height: 25px;
+header img { 
+    width: 10%;
+    position: relative;
+    top: 20px;
 }
 
 main {
@@ -25,13 +46,13 @@ footer {
 }
 
 li {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: inline;
-    width: 50px;
+    /* width: 50px; */
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: Blue;
 }
