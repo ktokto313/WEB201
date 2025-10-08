@@ -3,6 +3,11 @@ body {
     font-size: 15px;
 }
 
+#skip-to-main:focus {
+    background-color: aqua;
+    color: red;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -22,16 +27,25 @@ body {
 
 header {
     background-color: greenyellow;
+    color: violet;
+    text-decoration: none;
+}
+
+header a {
+    margin: 0 10px;
 }
 
 nav {
     display: inline-block;
+    position: relative;
+    transform: translateY(-40%);
     align-content: center;
     width: 80%;
     /* background-color: green; */
 }
 
 header img { 
+    margin-left: 4%;
     width: 10%;
     position: relative;
     top: 20px;
