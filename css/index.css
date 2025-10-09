@@ -3,16 +3,36 @@ body {
     font-size: 15px;
 }
 
+img {
+    box-sizing: border-box;
+    padding: 2px 2px;
+    border: black 1px solid;
+    border-radius: 15px;
+}
+
 #skip-to-main:focus {
     background-color: aqua;
     color: red;
 }
 
+#main-content img {
+    transition: height 2s ease-out 2s;
+}
+
+#main-content img:hover {
+    position: fixed;
+    top: 10%;
+    height: 80%;
+    width: auto;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: 40% 40%;
-    gap: 20px;
+    grid-template-columns: 45% 45%;
+    column-gap: 8%;
+    row-gap: 20px;
     align-items: end;
+    margin: 0 7%;
 }
 
 .grid img {
@@ -23,6 +43,7 @@ body {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    row-gap: 10px;
 }
 
 header {
@@ -38,7 +59,7 @@ header a {
 nav {
     display: inline-block;
     position: relative;
-    transform: translateY(-40%);
+    /* transform: translateY(-40%); */
     align-content: center;
     width: 80%;
     /* background-color: green; */
@@ -49,6 +70,7 @@ header img {
     width: 10%;
     position: relative;
     top: 20px;
+    height: 100px;
 }
 
 main {
