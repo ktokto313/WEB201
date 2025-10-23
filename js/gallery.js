@@ -25,3 +25,13 @@ back to the original text.  You can use the html code to see what that original 
     image.style.backgroundImage = "url('')";
     image.innerHTML = "Hover over an image below to display here.";
 }
+
+function initTabIndex() {
+    console.log("Initializing tab index for keyboard user");
+    count = 1;
+    var images = document.querySelectorAll("img");
+    images.forEach(element => {
+        element.tabIndex = count;
+        count++;
+    });
+}
