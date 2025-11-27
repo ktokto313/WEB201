@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+nav > a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+section > img {
+    width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        border: 1px #4ed9d0 solid;
+        overflow: auto;
+    }
+    nav > a {
+        display: block;
+        float: left;
+        padding: 1rem 2rem;
+        /* border: 1px #4ed9d0 solid; */
+        width: 10rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav > a:hover {
+        background-color: #4ed9d0;
+        color: #ffffff;
+    }
+
+    h1 {
+        font-size: 10vh;
+        margin-top: 5vh;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        overflow: auto;
+        margin: 5vh 2.5vw;
+    }
+
+    section > img {
+        position: relative;
+        right: 0px;
+        float: right;
+        width: 45%;
+        padding: 0px 5%;
+    }
+
+    section:nth-of-type(2n) > img{
+        left: 0px;
+        float: left;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: #303030;
+        color: white;
+    }
+
+    #current-a {
+        background-color: #427070;
+        color: white;
+    }
+    
+    @media screen and (min-width: 700px) {
+        nav {
+            border: 1px #427070 solid;
+            overflow: auto;
+        }
+    }
+
+    nav > a:hover {
+        background-color: #427070;
+        color: white;
+    }
+}
